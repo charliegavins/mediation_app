@@ -9,6 +9,7 @@ const watch = () => {
     `${config.src.scss}${config.selectors.scss}`,
     `${config.src.scss}${config.main.scss}`
   ], ['build-css']);
+  // watch for changes in javascript files, if there are changes then run build-js
   gulp.watch(`${config.src.js}${config.selectors.js}`, ['build-js']);
   gulp.watch(`${config.src.images}${config.selectors.images}`, ['build-images']);
   gulp.watch(`${config.src.fonts}${config.selectors.fonts}`, ['build-fonts']);
