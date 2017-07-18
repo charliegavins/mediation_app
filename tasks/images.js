@@ -8,10 +8,15 @@ const imagemin         = require('gulp-imagemin');
 const browserSync      = require('browser-sync');
 const config           = require('../package').gulp;
 
-//deletes the images in the destination folder found in the package.json. Updated this from original on NPM's recommendation that 'clean' is now deprecated. Possible issue
+//deletes the images in the destination folder found in the package.json. Updated this from original on NPM's recommendation that 'clean' is now deprecated. Possible issue - original commented out code below
 const cleanImages = () => {
   return del(`${config.dest.images}${config.selectors.images}`);
 };
+
+// const cleanImages = () => {
+//   return gulp.src(config.dest.images, { read: false })
+//     .pipe(clean());
+// };
 
 //copies images from SRC to public, whilst applying the image minifyer which compresses the images based on a couple of parameters
 const copyImages = () => {
