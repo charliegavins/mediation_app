@@ -15,10 +15,12 @@ const watch = () => {
   gulp.watch(`${config.src.images}${config.selectors.images}`, ['build-images']);
   //watch fonts folder for changes and print new code accordingly
   gulp.watch(`${config.src.fonts}${config.selectors.fonts}`, ['build-fonts']);
-  //if change build html partials 
+  //if change build html partials
   gulp.watch(`${config.src.js}${config.selectors.html}`, ['build-partials']);
+  // if changes, build main index.html
   gulp.watch(`${config.srcDir}${config.main.index}`, ['build-index']);
 };
 
+//export
 gulp.task('watch', watch);
 module.exports = watch;
