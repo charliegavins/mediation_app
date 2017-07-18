@@ -30,7 +30,7 @@ const validateLocalJs = () => {
 //fetch the local javascript, put it in the following order, and convert any JS written in ES2015 to ES5
 const fetchLocalJs = () => {
   return validateLocalJs()
-    .pipe(order([config.main.js,config.selectors.js]))
+    .pipe(order([config.main.js, config.selectors.js]))
     .pipe(babel({
       presets: ['es2015']
     }));

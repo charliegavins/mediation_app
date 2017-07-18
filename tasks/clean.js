@@ -1,4 +1,5 @@
 const gulp             = require('gulp');
+// const del              = require('del');
 const clean            = require('gulp-clean');
 const config           = require('../package').gulp;
 

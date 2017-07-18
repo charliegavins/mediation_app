@@ -11,7 +11,7 @@ const serve = () => {
 
 //initialize browserSync to run on the local proxy of 4000, watching all of the files in the public folder for changes. If they change, then reload the browser.
 browserSync.init(null, {
-  proxy: 'http://localhost:4000',
+  proxy: 'http://localhost:3000',
   files: ['public/**/*.*'],
   browser: 'google chrome',
   port: 7000,
