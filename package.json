@@ -2,7 +2,14 @@
   "name": "mediation_app",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": {
+    "js": "app.js",
+    "index": "index.html",
+    "scss": "style.scss",
+    "server": "index.js",
+    "gulpfile": "gulpfile.js",
+    "packageJson": "package.json"
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
@@ -17,6 +24,8 @@
     "gulp-babel": "^6.1.2",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.3.0",
     "gulp-jshint": "^2.0.4",
@@ -46,35 +55,27 @@
       "images": "src/images/"
     }
   },
-    "dest": {
-      "js": "public/js/",
-      "css": "public/css/",
-      "fonts": "public/fonts/",
-      "images": "public/images/"
-    },
-    "main": {
-      "js": "app.js",
-      "index": "index.html",
-      "scss": "style.scss",
-      "server": "index.js",
-      "gulpfile": "gulpfile.js",
-      "packageJson": "package.json"
-    },
-    "vendor": {
-      "js": "vendor.js",
-      "css": "vendor.css"
-    },
-    "output": {
-      "js": "app.js",
-      "css": "style.css"
-    },
-    "selectors": {
-      "all": "*",
-      "js": "**/*.js",
-      "css": "**/*.css",
-      "scss": "**/*.scss",
-      "html": "**/*.html",
-      "images": "**/*.{png,jpg,jpeg,gif,ico}",
-      "fonts": "**/*.{eot,svg,ttf,woff,woff2}"
-    }
+  "dest": {
+    "js": "public/js/",
+    "css": "public/css/",
+    "fonts": "public/fonts/",
+    "images": "public/images/"
+  },
+  "vendor": {
+    "js": "vendor.js",
+    "css": "vendor.css"
+  },
+  "output": {
+    "js": "app.js",
+    "css": "style.css"
+  },
+  "selectors": {
+    "all": "*",
+    "js": "**/*.js",
+    "css": "**/*.css",
+    "scss": "**/*.scss",
+    "html": "**/*.html",
+    "images": "**/*.{png,jpg,jpeg,gif,ico}",
+    "fonts": "**/*.{eot,svg,ttf,woff,woff2}"
+  }
 }

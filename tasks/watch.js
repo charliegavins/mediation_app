@@ -15,6 +15,7 @@ const watch = () => {
   gulp.watch(`${config.src.images}${config.selectors.images}`, ['build-images']);
   //watch fonts folder for changes and print new code accordingly
   gulp.watch(`${config.src.fonts}${config.selectors.fonts}`, ['build-fonts']);
+  //if change build html partials 
   gulp.watch(`${config.src.js}${config.selectors.html}`, ['build-partials']);
   gulp.watch(`${config.srcDir}${config.main.index}`, ['build-index']);
 };
