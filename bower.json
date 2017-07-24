@@ -1,6 +1,15 @@
 {
   "name": "mediation_app",
   "main": "index.js",
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
   "homepage": "https://github.com/charliegavins/mediation_app",
   "authors": [
     "gabrielghost <charlie.gavins@neonseed.com>"
@@ -22,14 +31,7 @@
     "angular-touch": "^1.6.5",
     "angular-resource": "^1.6.5",
     "angular-bootstrap": "^2.5.0",
-    "components-font-awesome": "^4.7.0"
-  },
-  "overrides": {
-    "bootstrap": {
-      "main": [
-        "dist/css/bootstrap.css",
-        "dist/js/bootstrap.js"
-      ]
-    }
+    "components-font-awesome": "^4.7.0",
+    "angular-strap": "^2.3.12"
   }
 }

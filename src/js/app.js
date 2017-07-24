@@ -5,5 +5,6 @@ angular
     'ui.bootstrap',
     'angular-jwt',
     'ngAnimate',
-    'ngTouch'
+    'ngTouch',
+    'mgcrea.ngStrap'
   ]);
